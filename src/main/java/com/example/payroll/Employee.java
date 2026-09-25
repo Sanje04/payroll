@@ -6,7 +6,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
-
+// entity lets Spring know that this class is a JPA entity.
+//  JPA will create a table for this entity in the database. 
+// The @Id annotation tells JPA to use the id field as the primary key. 
+// The @GeneratedValue annotation tells JPA to automatically generate a value for the id field when a new Employee is created.
 @Entity
 class Employee {
 
